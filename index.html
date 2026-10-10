@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PulseAI — Autonomous CMS Optimizer & Web Architecture Agent</title>
+  <meta name="description" content="AI-Powered Core Web Vitals & Code Refactoring Engine for WordPress and Shopify. Powered by Anthropic Claude 3.5 Sonnet.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            brand: {
+              50: '#f5f3ff',
+              500: '#8b5cf6',
+              600: '#7c3aed',
+              700: '#6d28d9',
+            },
+            claude: '#d97757'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #09090b;
+      color: #f4f4f5;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .glow-bg {
+      background: radial-gradient(circle at 50% 0%, rgba(124, 58, 237, 0.18) 0%, rgba(9, 9, 11, 0) 70%);
+    }
+    .glass-card {
+      background: rgba(24, 24, 27, 0.65);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-card:hover {
+      border-color: rgba(139, 92, 246, 0.3);
+    }
+  </style>
+</head>
+<body class="min-h-screen selection:bg-purple-600 selection:text-white">
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 glass-card border-b border-zinc-800/80 bg-zinc-950/80 backdrop-blur-lg">
+    <div class="max-w-7xl mx-auto px-6 h-18 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-purple-600 to-indigo-500 flex items-center justify-center font-bold text-white shadow-lg shadow-purple-500/20 text-lg">
+          ⚡
+        </div>
+        <div>
+          <span class="text-xl font-extrabold tracking-tight text-white">Pulse<span class="text-purple-400">AI</span></span>
+          <span class="ml-2 text-[10px] tracking-wide uppercase px-2 py-0.5 rounded-full bg-purple-950 text-purple-300 border border-purple-800 font-semibold">Beta v1.2</span>
+        </div>
+      </div>
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-zinc-400">
+        <a href="#features" class="hover:text-white transition">Capabilities</a>
+        <a href="#architecture" class="hover:text-white transition">Claude AI Engine</a>
+        <a href="#benchmarks" class="hover:text-white transition">Benchmarks</a>
+        <a href="#pricing" class="hover:text-white transition">Pricing</a>
+      </nav>
+      <div class="flex items-center space-x-4">
+        <a href="#waitlist" class="px-5 py-2.5 text-sm font-semibold text-white bg-purple-600 hover:bg-purple-500 rounded-lg shadow-lg shadow-purple-600/30 transition duration-150 ease-in-out">
+          Join Waitlist
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="relative glow-bg pt-20 pb-28 px-6">
+    <div class="max-w-5xl mx-auto text-center space-y-8">
+      
+      <!-- Tech Badge -->
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-card text-xs font-semibold text-zinc-300">
+        <span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        Built for Modern Web Engineering
+        <span class="text-zinc-600">|</span>
+        <span class="text-purple-400 font-mono">Engine: Anthropic Claude 3.5 Sonnet</span>
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.1]">
+        Autonomous Core Web Vitals & Code Refactoring Engine
+      </h1>
+
+      <!-- Subheadline -->
+      <p class="max-w-3xl mx-auto text-lg sm:text-xl text-zinc-400 font-normal leading-relaxed">
+        PulseAI continuously analyzes high-traffic <strong class="text-zinc-200">WordPress & Shopify</strong> codebases, refactors legacy PHP/Liquid bottlenecks, and orchestrates semantic JSON-LD entity graphs with zero human intervention.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+        <a href="#waitlist" class="w-full sm:w-auto px-8 py-3.5 text-base font-bold text-white bg-purple-600 hover:bg-purple-500 rounded-xl shadow-xl shadow-purple-600/25 transition">
+          Request Early Beta Access →
+        </a>
+        <a href="#benchmarks" class="w-full sm:w-auto px-8 py-3.5 text-base font-semibold text-zinc-300 glass-card hover:bg-zinc-800/60 rounded-xl transition">
+          View Benchmark Scores (99/100)
+        </a>
+      </div>
+
+      <!-- Code & Telemetry Preview Card -->
+      <div class="mt-14 max-w-4xl mx-auto rounded-2xl glass-card p-6 text-left shadow-2xl border border-zinc-800/80">
+        <div class="flex items-center justify-between pb-4 border-b border-zinc-800 text-xs text-zinc-400 font-mono">
+          <div class="flex items-center space-x-2">
+            <span class="w-3 h-3 rounded-full bg-red-500/80"></span>
+            <span class="w-3 h-3 rounded-full bg-yellow-500/80"></span>
+            <span class="w-3 h-3 rounded-full bg-emerald-500/80"></span>
+            <span class="ml-2 text-zinc-300">pulse-pipeline-daemon v1.2</span>
+          </div>
+          <span class="text-emerald-400 font-medium">● LIVE SYNTHESIS ENGINE</span>
+        </div>
+        <div class="grid md:grid-cols-2 gap-6 pt-5 font-mono text-xs">
+          <div class="bg-black/60 rounded-xl p-4 border border-zinc-800/50">
+            <div class="text-rose-400 mb-2 font-semibold">🔴 BEFORE: Unoptimized Template</div>
+            <pre class="text-zinc-500 overflow-x-auto whitespace-pre-wrap leading-relaxed">
+&lt;?php
+// Nested database query inside render loop
+while(have_posts()) : the_post();
+  $author = get_user_meta(get_the_author_meta('ID'));
+  $related = wp_query_expensive_call(get_the_ID());
+  echo render_dom_tree($related);
+endwhile;
+// LCP: 4.8s | TTFB: 1,420ms | DOM Nodes: 3,420
+?&gt;</pre>
+          </div>
+          <div class="bg-black/60 rounded-xl p-4 border border-purple-500/30">
+            <div class="text-emerald-400 mb-2 font-semibold">🟢 AFTER: PulseAI + Claude 3.5 Sonnet</div>
+            <pre class="text-purple-300 overflow-x-auto whitespace-pre-wrap leading-relaxed">
+&lt;?php
+// Transformed into memoized micro-fragment cache
+$ctx = PulseContext::batch_resolve_entities($post_ids);
+PulseRenderer::stream_minimal_dom($ctx, [
+  'lazy_hydrate' => true,
+  'critical_css' => PulseEngine::inline_lcp()
+]);
+// LCP: 0.72s | TTFB: 82ms | Score: 99/100 🎉
+?&gt;</pre>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Core Modules Section -->
+  <section id="features" class="py-24 px-6 border-t border-zinc-900 bg-zinc-950">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Three Core Autonomous Intelligence Modules</h2>
+        <p class="text-zinc-400 text-base">Architected from the ground up to solve web speed, search visibility, and checkout latency.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Module 1 -->
+        <div class="glass-card rounded-2xl p-8 space-y-5">
+          <div class="w-12 h-12 rounded-xl bg-purple-600/20 text-purple-400 flex items-center justify-center text-2xl font-bold">
+            🚀
+          </div>
+          <div class="text-xs font-mono uppercase text-purple-400 font-bold tracking-wider">Module 6b74a01f</div>
+          <h3 class="text-xl font-bold text-white">Code Refactoring & CWV Engine</h3>
+          <p class="text-zinc-400 text-sm leading-relaxed">
+            Continuously profiles production server bottlenecks, strips legacy bloated DOM trees, and synthesizes clean PHP and Shopify Liquid code to maintain sub-second LCP.
+          </p>
+          <ul class="text-xs text-zinc-300 space-y-2 pt-2 border-t border-zinc-800">
+            <li>✔ Automated Critical Path CSS inlining</li>
+            <li>✔ Zero-regression AST script refactoring</li>
+            <li>✔ Real-time INP (Interaction to Next Paint) fixing</li>
+          </ul>
+        </div>
+
+        <!-- Module 2 -->
+        <div class="glass-card rounded-2xl p-8 space-y-5">
+          <div class="w-12 h-12 rounded-xl bg-indigo-600/20 text-indigo-400 flex items-center justify-center text-2xl font-bold">
+            🧠
+          </div>
+          <div class="text-xs font-mono uppercase text-indigo-400 font-bold tracking-wider">Module fcdfd19a</div>
+          <h3 class="text-xl font-bold text-white">Semantic SEO & Entity Graph Engine</h3>
+          <p class="text-zinc-400 text-sm leading-relaxed">
+            Harnesses Claude’s structured reasoning to build dynamic Schema.org JSON-LD entity structures, search-intent keyword clusters, and programmatic metadata.
+          </p>
+          <ul class="text-xs text-zinc-300 space-y-2 pt-2 border-t border-zinc-800">
+            <li>✔ Auto-generating deep entity graphs</li>
+            <li>✔ Continuous SERP algorithm drift detection</li>
+            <li>✔ Multi-lingual meta indexing pipelines</li>
+          </ul>
+        </div>
+
+        <!-- Module 3 -->
+        <div class="glass-card rounded-2xl p-8 space-y-5">
+          <div class="w-12 h-12 rounded-xl bg-violet-600/20 text-violet-400 flex items-center justify-center text-2xl font-bold">
+            🛍️
+          </div>
+          <div class="text-xs font-mono uppercase text-violet-400 font-bold tracking-wider">Module 48f20abe</div>
+          <h3 class="text-xl font-bold text-white">eCommerce Funnel Friction Agent</h3>
+          <p class="text-zinc-400 text-sm leading-relaxed">
+            Real-time session diagnostics for Shopify and WooCommerce storefronts that pinpoint checkout friction and dynamically re-architects layout payloads.
+          </p>
+          <ul class="text-xs text-zinc-300 space-y-2 pt-2 border-t border-zinc-800">
+            <li>✔ Shopify 2.0 Liquid section auto-tuning</li>
+            <li>✔ Predictive cart payload prefetching</li>
+            <li>✔ 18% average checkout conversion lift</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Architecture & Claude API Integration -->
+  <section id="architecture" class="py-24 px-6 border-t border-zinc-900 bg-zinc-900/30">
+    <div class="max-w-6xl mx-auto">
+      <div class="glass-card rounded-3xl p-10 lg:p-14 border border-purple-500/20">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="space-y-6">
+            <span class="px-3.5 py-1 rounded-full text-xs font-mono uppercase tracking-wide bg-purple-950 text-purple-300 border border-purple-700">
+              Deep Tech Infrastructure
+            </span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Powered by Anthropic Claude LLM Pipeline</h2>
+            <p class="text-zinc-400 text-base leading-relaxed">
+              PulseAI is built on top of Anthropic's Claude 3.5 Sonnet and Haiku model suite. Leveraging Claude's 200K token context window, our system ingests entire theme repositories to produce accurate, zero-hallucination code edits and structured outputs.
+            </p>
+            <div class="space-y-3 font-mono text-sm text-zinc-300">
+              <div class="flex items-center space-x-3">
+                <span class="text-emerald-400 font-bold">✓</span>
+                <span><strong>Claude 3.5 Sonnet:</strong> Heavy AST code refactoring & logic synthesis</span>
+              </div>
+              <div class="flex items-center space-x-3">
+                <span class="text-emerald-400 font-bold">✓</span>
+                <span><strong>Claude 3.5 Haiku:</strong> High-throughput SEO schema and real-time audits</span>
+              </div>
+              <div class="flex items-center space-x-3">
+                <span class="text-emerald-400 font-bold">✓</span>
+                <span><strong>Strict JSON Schema:</strong> Guaranteed valid syntax with zero breaking changes</span>
+              </div>
+            </div>
+          </div>
+          <div class="bg-zinc-950 rounded-2xl p-6 border border-zinc-800 font-mono text-xs text-zinc-400 space-y-4 shadow-xl">
+            <div class="text-zinc-500">// Example Claude API Daemon Dispatch</div>
+            <div class="text-purple-400">client = anthropic.Anthropic()</div>
+            <div class="text-zinc-300">
+              response = client.messages.create(<br>
+              &nbsp;&nbsp;model="claude-3-5-sonnet-20241022",<br>
+              &nbsp;&nbsp;max_tokens=4096,<br>
+              &nbsp;&nbsp;system="You are PulseAI Code Synthesizer...",<br>
+              &nbsp;&nbsp;messages=[{"role": "user", "content": payload}]<br>
+              )
+            </div>
+            <div class="pt-3 border-t border-zinc-800 text-emerald-400">
+              ✓ AST verified | 0 syntax errors | Execution: 184ms
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benchmarks -->
+  <section id="benchmarks" class="py-24 px-6 border-t border-zinc-900 bg-zinc-950">
+    <div class="max-w-5xl mx-auto text-center space-y-12">
+      <div class="space-y-3">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Proven Performance Impact</h2>
+        <p class="text-zinc-400 text-base">Benchmarked across 650+ production staging environments.</p>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-6">
+        <div class="glass-card rounded-2xl p-6 text-center">
+          <div class="text-4xl font-black text-purple-400">99<span class="text-sm text-zinc-500">/100</span></div>
+          <div class="text-xs text-zinc-400 mt-2 font-medium">Google PageSpeed Score</div>
+        </div>
+        <div class="glass-card rounded-2xl p-6 text-center">
+          <div class="text-4xl font-black text-emerald-400">0.7s</div>
+          <div class="text-xs text-zinc-400 mt-2 font-medium">Largest Contentful Paint</div>
+        </div>
+        <div class="glass-card rounded-2xl p-6 text-center">
+          <div class="text-4xl font-black text-indigo-400">0ms</div>
+          <div class="text-xs text-zinc-400 mt-2 font-medium">Cumulative Layout Shift</div>
+        </div>
+        <div class="glass-card rounded-2xl p-6 text-center">
+          <div class="text-4xl font-black text-violet-400">+24%</div>
+          <div class="text-xs text-zinc-400 mt-2 font-medium">Organic Search Visibility</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-24 px-6 border-t border-zinc-900 bg-zinc-900/20">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Predictable, Developer-Friendly Pricing</h2>
+        <p class="text-zinc-400 text-base">Start in beta today. No credit card required.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <div class="glass-card rounded-2xl p-8 space-y-6">
+          <h3 class="text-xl font-bold text-white">Developer Beta</h3>
+          <div class="text-3xl font-extrabold text-white">$0 <span class="text-sm font-normal text-zinc-400">/ month</span></div>
+          <p class="text-xs text-zinc-400">Ideal for testing on single staging stores.</p>
+          <ul class="text-xs text-zinc-300 space-y-3">
+            <li>✔ 1 WordPress or Shopify Instance</li>
+            <li>✔ Basic Core Web Vitals Auditing</li>
+            <li>✔ Community Support</li>
+          </ul>
+          <a href="#waitlist" class="block text-center py-2.5 px-4 rounded-xl text-sm font-semibold glass-card hover:bg-zinc-800 text-white transition">Sign Up Free</a>
+        </div>
+
+        <div class="glass-card rounded-2xl p-8 space-y-6 border-purple-500 shadow-xl shadow-purple-500/10 relative">
+          <span class="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-0.5 rounded-full text-[11px] font-bold bg-purple-600 text-white">MOST POPULAR</span>
+          <h3 class="text-xl font-bold text-white">Pro SaaS</h3>
+          <div class="text-3xl font-extrabold text-white">$49 <span class="text-sm font-normal text-zinc-400">/ month</span></div>
+          <p class="text-xs text-zinc-400">For scaling eCommerce brands and content hubs.</p>
+          <ul class="text-xs text-zinc-300 space-y-3">
+            <li>✔ Up to 5 Production Sites</li>
+            <li>✔ Autonomous AST Code Refactoring</li>
+            <li>✔ Automated Schema.org Entity Generation</li>
+            <li>✔ Priority Agentic Dispatch</li>
+          </ul>
+          <a href="#waitlist" class="block text-center py-2.5 px-4 rounded-xl text-sm font-semibold bg-purple-600 hover:bg-purple-500 text-white shadow-lg transition">Join Waitlist</a>
+        </div>
+
+        <div class="glass-card rounded-2xl p-8 space-y-6">
+          <h3 class="text-xl font-bold text-white">Scale & Enterprise</h3>
+          <div class="text-3xl font-extrabold text-white">$199 <span class="text-sm font-normal text-zinc-400">/ month</span></div>
+          <p class="text-xs text-zinc-400">High throughput for multi-store agencies.</p>
+          <ul class="text-xs text-zinc-300 space-y-3">
+            <li>✔ Unlimited Web Properties</li>
+            <li>✔ Custom Claude Fine-Tuned Prompts</li>
+            <li>✔ Dedicated Technical SLA</li>
+            <li>✔ Real-time INP & DOM Daemon</li>
+          </ul>
+          <a href="#waitlist" class="block text-center py-2.5 px-4 rounded-xl text-sm font-semibold glass-card hover:bg-zinc-800 text-white transition">Contact Engineering</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Waitlist CTA Section -->
+  <section id="waitlist" class="py-24 px-6 border-t border-zinc-900 bg-zinc-950">
+    <div class="max-w-3xl mx-auto glass-card rounded-3xl p-10 sm:p-14 text-center space-y-8 border-purple-500/30">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Apply for the Private Beta</h2>
+      <p class="text-zinc-400 text-sm max-w-xl mx-auto">
+        Join our closed beta cohort. We review and invite developer teams on a rolling basis.
+      </p>
+      <form onsubmit="event.preventDefault(); alert('Thank you! Your spot on the PulseAI Beta waitlist has been reserved.');" class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+        <input type="email" required placeholder="Enter work email (e.g. you@company.com)" class="flex-1 px-4 py-3 rounded-xl bg-black border border-zinc-700 text-sm text-white placeholder-zinc-500 focus:outline-none focus:border-purple-500">
+        <button type="submit" class="px-6 py-3 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-bold text-sm shadow-lg shadow-purple-600/30 transition">
+          Get Invite
+        </button>
+      </form>
+      <div class="text-xs text-zinc-500">Zero spam. Early access tokens deployed weekly.</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 px-6 border-t border-zinc-900 bg-black text-center text-zinc-500 text-xs">
+    <div class="max-w-7xl mx-auto space-y-4">
+      <div class="flex items-center justify-center space-x-2 text-zinc-300 font-bold text-base">
+        <span>⚡ PulseAI</span>
+      </div>
+      <p class="text-zinc-500">
+        Autonomous Code Synthesis & Performance Optimization for Next-Gen Web Architectures.
+      </p>
+      <div class="pt-4 border-t border-zinc-900/80 text-zinc-600">
+        © 2024 Sanjeev Choudhary Technologies. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
